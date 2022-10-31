@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("assets/header.html");
+            $("#footer").load("assets/footer.html");
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div id="header"></div>
+</header>
+<main class="mainLogin">
+    <h1>Sign In</h1>
+    <div class="form-center">
+        <div class="containerSignIn">
+            <form action="">
+                <!--EMAIL-->
+                <h4>Email :</h4>
+                <div class="field email-field">
+                    <div class="input-field">
+                        <input type="email" placeholder="Enter your email" class="email"/>
+                    </div>
+                    <p>
+          <span class="error">
+            <i class="error-icon"></i>
+           Please enter a valid email
+          </span>
+                    </p>
+                </div>
+
+                <!--PASSWORD-->
+                <h4>Password :</h4>
+                <div class="field create-password">
+                    <div class="input-field">
+                        <input type="password" placeholder="Create password" class="password"/>
+                        <!--            <i class="bx bx-hide show-hide"></i>-->
+                    </div>
+                    <span class="error">
+            <i class="error-icon"></i>
+            <p>
+              Please enter at least 8 characters with number, symbol, small and
+              capital letter.
+            </p>
+          </span>
+                </div>
+
+                <!--LASTNAME-->
+                <h4>Last Name :</h4>
+                <div class="field lastName-field">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your last name" class="lastName"/>
+                    </div>
+                    <span class="error">
+            <i class="error-icon"></i>
+            <p>
+              Please enter only Ukrainian letters and at least 2.
+            </p>
+          </span>
+                </div>
+
+                <!--FIRSTNAME-->
+                <h4>First Name :</h4>
+                <div class="field firstName-field">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your first name" class="firstName"/>
+                    </div>
+                    <span class="error">
+            <i class="error-icon"></i>
+            <p>
+              Please enter only Ukrainian letters and at least 2.
+            </p>
+          </span>
+                </div>
+
+                <!--PATRONYMIC-->
+                <h4>Patronymic :</h4>
+                <div class="field patronymic-field">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your patronymic" class="patronymic"/>
+                    </div>
+                    <span class="error">
+            <i class="error-icon"></i>
+            <p>
+              Please enter only Ukrainian letters and at least 2.
+            </p>
+          </span>
+                </div>
+
+                <!--PHONE-->
+                <h4>Phone number :</h4>
+                <div class="field phone-field">
+                    <div class="input-field">
+                        <input type="text" placeholder="+38(0__)-___-__-__" class="phone"/>
+                    </div>
+                    <span class="error">
+            <i class="error-icon"></i>
+            <p>
+              Invalid phone number.
+            </p>
+          </span>
+                </div>
+
+                <!--DATE-->
+                <h4>Date of birth :</h4>
+                <div class="field date-field">
+                    <div class="input-field">
+                        <input type="date" class="date"/>
+                    </div>
+                    <span class="error">
+            <i class="error-icon"></i>
+            <p>
+              Invalid date.
+            </p>
+          </span>
+                </div>
+
+                <!--GENDER-->
+                <h4>Gender :</h4>
+                <div class="field gender-field radioInput">
+                    <input type="radio" name="radioSelection" class="gender1" id="male" value="male">Male
+                    <input type="radio" name="radioSelection" class="gender2" id="female" value="female">Female
+                    <input type="radio" name="radioSelection" class="gender3" id="another" value="another">Another
+                    <span class="error">
+            <i class="error-icon"></i>
+            <p>
+              Choose something.
+            </p>
+          </span>
+                </div>
+
+                <!--GROUP-->
+                <h4>Group :</h4>
+                <div class="field group-field">
+                    <select name="group" class="group input-options-field">
+                        <option value="">-Choose an option-</option>
+                        <option value="IA11">IA-11 найкраща група</option>
+                        <option value="IA12">IA-12</option>
+                        <option value="IA13">IA-13</option>
+                    </select>
+                    <span class="error">
+            <i class="error-icon"></i>
+            <p>
+              Choose from the dropdown.
+            </p>
+          </span>
+                </div>
+
+                <div class="input-field buttonSignIn">
+                    <input type="submit" value="Submit Now"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--КНОПКА І ТАБЛИЦІ-->
+    <div class="background-lightsalmon">
+        <input type="button" class="buttonSignInTable delete" value="Delete" onclick="deleteRows(tableID)">
+        <input type="button" class="buttonSignInTable copy" value="Copy" onclick="copyRows(tableID)">
+
+        <div class="table-responsive">
+            <table class="table" id="tableID">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Призвіще</th>
+                    <th scope="col">Ім'я</th>
+                    <th scope="col">По-батькові</th>
+                    <th scope="col">Телефон</th>
+                    <th scope="col">Дата народження</th>
+                    <th scope="col">Стать</th>
+                    <th scope="col">Група</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="footer"></div>
+</footer>
+<script src="bs5/js/bootstrap.js"></script>
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.phone').inputmask("+38(099)-999-99-99");
+    });
+</script>
+</body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Sign In Page</title>-->
+<!--    <meta name="title" content="Електронний журнал КПІ">-->
+<!--    <meta name="description" content="Студенти КПІ можуть перевірити свою успішність">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <link rel="stylesheet" href="style.css">-->
+<!--    <link rel="stylesheet" href="bs5/css/bootstrap.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">-->
+<!--    <script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+<!--    <script>-->
+<!--        $(function () {-->
+<!--            $("#header").load("assets/header.html");-->
+<!--            $("#footer").load("assets/footer.html");-->
+<!--        });-->
+<!--    </script>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--<header>-->
+<!--    <div id="header"></div>-->
+<!--</header>-->
+
+<!--<main class="mainLogin">-->
+<!--    <h1>Зареєструватися в Кампус КПІ</h1>-->
+<!--    <form class="form-center" id="create-account-form">-->
+<!--        <div class="containerLogin">-->
+<!--            <label>Email :</label><br>-->
+<!--            <input type="text" placeholder="test@example.com" id="email">-->
+<!--            <div id="emailError"></div>-->
+<!--            <label>Password :</label>-->
+<!--            <input type="password" placeholder="Enter Password" id="password" >-->
+<!--            <div id="passwordError"></div>-->
+<!--            <label>Призвіще :</label><br>-->
+<!--            <input type="text" placeholder="Enter Last Name" id="lastName" >-->
+<!--            <div id="lastNameError"></div>-->
+<!--            <label>Ім'я :</label>-->
+<!--            <input type="text" placeholder="Enter First Name" id="firstName" >-->
+<!--            <div id="firstNameError"></div>-->
+<!--            <label>По-батькові :</label><br>-->
+<!--            <input type="text" placeholder="Enter Patronymic" id="patronymic" >-->
+<!--            <div id="patronymicError"></div>-->
+<!--            <label>Телефон :</label>-->
+<!--            <input type="tel" class="masked-phone" data-phonemask="+380(__)___-__-__" id="phone" >-->
+<!--            <div id="phoneError"></div>-->
+<!--            <label>Стать :</label><br>-->
+<!--            <div class="radioInput" id="radioInput">-->
+<!--                <input type="radio" name="radioSelection" id="male" value="male">Male<br>-->
+<!--                <input type="radio" name="radioSelection" id="female" value="female">Female<br>-->
+<!--                <input type="radio" name="radioSelection" id="another" value="another">Another<br>-->
+<!--            </div>-->
+<!--            <div id="radioInputError"></div>-->
+<!--            <label>Дата народження :</label><br>-->
+<!--            <input type="date" name="birthday" class="dateInput" >-->
+<!--            <label>Група :</label><br>-->
+<!--            <select name="group" id="group" >-->
+<!--                <option value="">&#45;&#45;Please choose an option&#45;&#45;</option>-->
+<!--                <option value="IA11">IA-11 найкраща група</option>-->
+<!--                <option value="IA12">IA-12</option>-->
+<!--                <option value="IA13">IA-13</option>-->
+<!--            </select>-->
+<!--            <button class="buttonLogin" type="submit">Sign In</button>-->
+
+<!--        </div>-->
+<!--    </form>-->
+<!--</main>-->
+
+<!--<footer>-->
+<!--    <div id="footer"></div>-->
+<!--</footer>-->
+<!--<script src="bs5/js/bootstrap.js"></script>-->
+<!--<script src="phone-mask.min.js"></script>-->
+<!--<script src="validation.js"></script>-->
+<!--</body>-->
+<!--</html>-->

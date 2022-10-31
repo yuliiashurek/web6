@@ -1,0 +1,400 @@
+[class*="col"] {
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(15, 12, 79);
+    display: block;
+    padding: 10px;
+    background-color: lightsalmon;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(15, 12, 79);
+    display: block;
+    padding: 20px 10px 10px 10px;
+}
+
+.header {
+    background-color: rgb(15, 12, 79);
+    padding: 10px;
+}
+
+.logo {
+    margin: 5px;
+}
+
+.sidebar {
+    float: left;
+    width: 22%;
+    height: 60rem;
+    text-align: left;
+    background-color: lightsalmon;
+    padding: 1%;
+    border: 2px solid black;
+    margin: 0 1%;
+}
+
+.sidebar a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 15px 20px 10px;
+    font-size: 20px;
+    color: rgb(15, 12, 79);
+    text-decoration: none;
+    border: 1px double rgba(15, 12, 79, 0.6);
+    margin-top: 5px;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+.main {
+    float: left;
+    width: 75%;
+}
+
+.picture {
+    box-shadow: 10px 5px 3px rgba(252, 61, 55, 0.8);
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+}
+
+.footer div div div {
+    color: white;
+    background: darkslateblue;
+    text-align: left;
+}
+
+footer div h4 {
+    padding-left: 60px;
+    font-weight: bold;
+}
+
+dd {
+    padding-left: 60px;
+    text-indent: 1.5em;
+    font-size: 14px;
+}
+
+.bg {
+    background: darkslateblue;
+}
+
+.text {
+    display: block;
+    padding: 20px;
+}
+
+a i {
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+
+.buttonLogin {
+    background-color: rgb(15, 12, 79);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.mainLogin {
+    background-color: lightsalmon;
+    padding: 20px;
+    margin-bottom: 7px;
+}
+
+input[type=text], input[type=password], input[type=date], input[type=tel], select, .radioInput {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: block;
+    border: 2px solid rgb(15, 12, 79);
+    background-color: white;
+}
+
+.buttonLogin:hover {
+    opacity: 0.7;
+}
+
+.form-center {
+    display: flex;
+    justify-content: center;
+}
+
+.containerLogin {
+    padding: 25px;
+    width: 500px;
+    background-color: rgb(255, 160, 122);
+    margin: 10px 0;
+    border: 3px solid rgb(15, 12, 79);
+}
+
+.container-contacts {
+    padding: 100px 60px 440px 60px;
+    width: 900px;
+    background-color: rgb(255, 160, 122);
+    margin: 10px 0;
+    border: 3px solid rgb(15, 12, 79);
+}
+
+.containerA {
+    color: white;
+}
+
+.containerA:hover {
+    color: rgb(15, 12, 79);
+}
+
+.textOnBrightBackground {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(252, 61, 55);
+    color: white;
+}
+
+.news-section {
+    color: #777;
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+.news-column h4 {
+    display: inline-block;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    padding: 0.8em 0 0.3em;
+    margin: 0;
+}
+
+.newsDate {
+    display: inline-block;
+}
+
+.news-column p {
+    line-height: 1.7em;
+    padding: 0.1em 0 0;
+    display: block;
+}
+
+.news-column:hover {
+    background-color: rgba(255, 160, 122, 0.5);
+}
+
+.faq {
+    margin: 0 10px 20px 20px;
+}
+
+details summary {
+    display: inline-block;
+    width: 73%;
+    padding: 20px;
+    border: 2px solid rgb(15, 12, 79);
+    margin: 10px;
+}
+
+
+.form-center {
+    display: flex;
+    justify-content: center;
+}
+
+.containerSignIn {
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 500px;
+    background-color: rgb(255, 160, 122);
+    margin: 10px 0;
+    border: 3px solid rgb(15, 12, 79);
+}
+
+
+.containerSignIn header {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.containerSignIn form {
+    margin-top: 30px;
+}
+
+form .field {
+    margin-bottom: 20px;
+}
+
+form .input-field {
+    position: relative;
+    height: 55px;
+    width: 100%;
+}
+
+.input-options-field{
+    position: relative;
+    height: 55px;
+    width: 100%;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    border: 2px solid rgb(15, 12, 79);
+}
+
+.invalid input {
+    border-color: #d93025;
+}
+
+.input-field .show-hide {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #919191;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.field .error {
+    align-items: center;
+    margin-top: 6px;
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+
+.invalid .error {
+    display: flex;
+}
+
+.error .error-icon {
+    margin-right: 6px;
+    font-size: 15px;
+}
+
+.create-password .error {
+    align-items: flex-start;
+}
+
+.create-password .error-icon {
+    margin-top: 4px;
+}
+
+.buttonSignIn {
+    margin: 25px 0 6px;
+}
+
+.buttonSignIn input {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgb(15, 12, 79);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttonSignIn input:hover {
+    background-color: rgba(15, 12, 79, 0.8);
+}
+
+.buttonSignInTable {
+    background-color: rgb(15, 12, 79);
+    color: white;
+    padding: 5px 25px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.buttonSignInTable:hover{
+    background-color: rgba(15, 12, 79, 0.8);
+}
+
+.background-lightsalmon {
+    background-color: lightsalmon;
+}
+
+.table {
+    background-color: white;
+}
+
+.lds-ring {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgb(252, 61, 55) transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        width: 98%;
+        text-align: center;
+        height: auto;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    details summary {
+        width: 95%;
+    }
+
+    .input-options-field{
+        width: 80%;
+    }
+}
